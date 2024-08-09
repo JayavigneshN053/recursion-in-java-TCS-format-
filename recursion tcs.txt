@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String []args){
+        Scanner mkc=new Scanner(System.in);
+        int a=mkc.nextInt();
+        int b=mkc.nextInt();
+        int num,z=0,m=0;
+        int sum=0;
+        int sum1=0,sum2=0;
+        int x;
+        while(a>0){
+            num=a%10;
+            sum=(sum+num);
+            a=a/10;
+        }
+        x=sum*b;
+        while(x>0){
+            z=x%10;
+            sum1=sum1+z;
+            x=x/10;
+        }
+        while(sum1>0){
+            m=sum1%10;
+            sum2=sum2+m;
+            sum1=sum1/10;
+        }
+        System.out.println(sum2);
+    }
+}
